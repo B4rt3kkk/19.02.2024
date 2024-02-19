@@ -1,0 +1,21 @@
+html, body{
+    margin: 0%;
+    padding: 0%;
+}
+.Klikanie{
+    margin-top: 25%;
+    justify-content: center;
+    display: flex;
+}
+input{
+    margin: 1%;
+    padding: 1%;
+}
+button{
+    width: 5%;
+}
+#wynik{
+    margin-top: 5%;
+    justify-content: center;
+    display: flex;
+}

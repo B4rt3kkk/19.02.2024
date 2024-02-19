@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+    <body>
+        <div class="Klikanie">
+            <input type="number" id="liczby" placeholder="Wpisz potenge"></input>
+            <input type="number" id="liczby1"  placeholder="Wpisz ile liczb"></input>
+            <button onclick="potengowanie()">Klikej</button>
+        </div>
+
+        <div id="wynik">Wynik:</div>
+
+
+        <script>
+
+            function potengowanie(liczba1, liczba2){
+                let tablica = new Array(liczba2);
+                var liczba1 = document.getElementById("liczby").value;
+                var liczba2 = document.getElementById("liczby1").value;
+                    for(let i = 0; i < liczba2; i++){
+                        tablica[i] = Math.pow(liczba1, i);
+                    }
+                    console.log(tablica)
+                    document.getElementById("wynik").textContent = tablica;
+                }
+
+        </script>
+
+    </body>
+</html>
